@@ -47,7 +47,7 @@ const App = () => {
               For over 10 years I have worked with many different languages
               and frameworks and I have cultivated expertise in the following:
             </p>
-            <div className="flex justify-around md:items-baseline">
+            <div className="flex flex-row justify-around md:items-baseline">
               <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" className="mb-4 md:mb-0 group flex items-center flex-col">
                 <img className="transition-all duration-300 h-8 mb-2 opacity-50 group-hover:opacity-100" alt="framework-logo" src={reactLogo}/>
                 <span className="transition-all duration-300 text-gray-600 group-hover:text-gray-800">Reactjs</span>
@@ -168,6 +168,46 @@ const App = () => {
               </React.Fragment>
             </AccordionItem>
           </Accordion>
+        </div>
+      </section>
+      <section className="md:flex md:justify-start md:space-x-8 mb-8">
+        <div className="md:w-1/6">
+          <h1 className="mb-4 text-xl text-center text-gray-800 md:text-right md:py-1">Contact</h1>
+        </div>
+        <div className="w-full md:w-5/6">
+          <RightContentSection>
+            <form name="contact" method="POST" data-netlify="true">
+              <div className="mb-4">
+                <label for="name" class="block text-sm leading-5 font-medium text-gray-700">Name
+                </label>
+                <input
+                  id="name"
+                  className="rounded-md shadow-sm form-input block w-1/2 py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-blue-100"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div className="mb-4">
+                <label for="email" class="block text-sm leading-5 font-medium text-gray-700">Email
+                </label>
+                <input
+                  id="email"
+                  className="rounded-md shadow-sm form-input block w-1/2 py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-blue-100"
+                  placeholder="johndoe@example.com"
+                />
+              </div>
+              <div className="mb-4">
+                <label for="message" class="block text-sm leading-5 font-medium text-gray-700">Message
+                </label>
+                <textarea
+                  id="message"
+                  className="rounded-md shadow-sm form-input block w-1/2 py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-blue-100"
+                  placeholder="Hello"
+                />
+              </div>
+              <input type="hidden" name="form-name" value="contact" />
+              <button type="submit" className="px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-700 active:bg-blue-700 transition duration-150 ease-in-out">Send</button>
+            </form>
+          </RightContentSection>
         </div>
       </section>
     </React.Fragment>
