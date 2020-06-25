@@ -1,14 +1,18 @@
 import React from 'react';
 
-const AccordionItem = ({ title, children }) => {
+const AccordionItem = ({ position, company, date, children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div>
       <div
-        className={`flex items-center justify-between  cursor-pointer py-2 px-4 border-gray-300 ${isOpen ? "border-b-0" : "border-b"}`}
+        className={`box-border flex items-center justify-between relative cursor-pointer py-2 px-4 border-gray-300 ${isOpen ? "border-b-0" : "border-b"}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-gray800">{title}</span>
+        <div className="mr-4">
+          <span className="text-gray-800 mr-2">{position}</span>
+          <span className="text-gray-600">{company}</span>
+          <span className="text-gray-600 hidden md:inline"> : {date}</span>
+        </div>
         {
           isOpen
           ?
