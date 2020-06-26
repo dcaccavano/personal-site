@@ -2,7 +2,7 @@ import React from 'react';
 
 const RightContentSection = ({ children }) => {
   return (
-    <div className="w-full bg-white rounded shadow-md relative p-4">
+    <div className="border-b border-gray-400 pb-8 last:border-b-0">
       {children}
     </div>
   );

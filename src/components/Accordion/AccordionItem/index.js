@@ -1,11 +1,11 @@
 import React from 'react';
 
 const AccordionItem = ({ position, company, date, children }) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(true);
   return (
     <div>
       <div
-        className={`box-border flex items-center justify-between relative cursor-pointer py-2 px-4 border-gray-300 ${isOpen ? "border-b-0" : "border-b"}`}
+        className={`box-border flex items-center justify-between relative cursor-pointer p-4 border-gray-300 ${isOpen ? "border-b-0" : "border-b"}`}
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="mr-4">
@@ -17,7 +17,7 @@ const AccordionItem = ({ position, company, date, children }) => {
           isOpen
           ?
             <svg
-              className="text-blue-500 w-6"
+              className="text-red-500 w-6"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -29,7 +29,7 @@ const AccordionItem = ({ position, company, date, children }) => {
             </svg>
           :
             <svg
-              className="text-gray-700 w-6"
+              className="text-gray-600 w-6"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -41,7 +41,7 @@ const AccordionItem = ({ position, company, date, children }) => {
             </svg>
         }
       </div>
-      <div className={`pt-0 pb-4 px-4 border-gray-300 ${isOpen ? "block border-b" : "hidden border-b-0"}`}>
+      <div className={`pt-0 pb-4 px-4 border-gray-200 ${isOpen ? "block border-b" : "hidden border-b-0"}`}>
         {children}
       </div>
     </div>

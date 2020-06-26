@@ -2,7 +2,7 @@ import React from 'react';
 
 const Accordion = ({ children }) => {
   return (
-    <div className="w-full bg-white rounded shadow-md relative">
+    <div className="w-full relative">
       {children}
     </div>
   );

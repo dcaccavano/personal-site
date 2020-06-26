@@ -3,84 +3,74 @@ import Accordion from './components/Accordion';
 import AccordionItem from './components/Accordion/AccordionItem';
 import RightContentSection from './components/RightContentSection';
 
-import angularLogo from './images/angular-logo.svg';
-import emberLogo from './images/ember-logo.svg';
-import railsLogo from './images/rails-logo.svg';
-import reactLogo from './images/react-logo.svg';
-import tailwindLogo from './images/tailwind-logo.png';
-import webpackLogo from './images/webpack-logo.svg';
+import linkedin from './images/linkedin.svg';
+import github from './images/github.svg';
 
 const App = () => {
   return (
     <React.Fragment>
-      <section className="md:flex md:justify-start md:space-x-8 mb-8">
-        <div className="md:w-1/6">
-          <h1 className="mb-4 text-xl text-center text-gray-800 md:text-right md:py-1">About Me</h1>
+      <section className="md:flex md:justify-start md:space-x-12 mb-8 font-light">
+        <div className="md:w-1/3">
+          <h1 className="mb-4 text-5xl font-thin text-center text-red-500 md:text-right md:py-1">Dan Caccavano</h1>
+          <div className="flex items-center justify-around md:justify-end space-x-4 md:w-full w-1/4 md:mx-0 mx-auto mb-8">
+            <a href="https://www.linkedin.com/in/dcaccavano/" target="_blank" rel="noopener noreferrer">
+              <img className="transition-all duration-300 h-8 hover:shadow-md hover:opacity-100 opacity-25 rounded-full" src={linkedin} alt="linkedin-logo"/>
+            </a>
+            <a href="https://github.com/dcaccavano" target="_blank" rel="noopener noreferrer">
+              <img className="transition-all duration-300 h-8 hover:shadow-md hover:opacity-100 opacity-25 rounded-full" src={github} alt="github-logo"/>
+            </a>
+          </div>
         </div>
-        <div className="w-full md:w-5/6">
+        <div className="w-full md:w-2/3">
           <RightContentSection>
-            <p className="mb-8 text-gray-800">
-              My name is Dan Caccavano. I am a software engineer and I have been
-              developing applications for over 10 years. My passion is front end
-              web development, as well as a healthy amount of cross-over with
-              product and UX/UI design, but I have experience across many parts of
-              the software stack. I have worked at large 10,000+ employee
+            <p className="mb-8 text-gray-800 text-lg leading-relaxed">
+              I am a <span className="font-normal">front end software engineer </span> and I have been
+              developing applications for over <span className="font-normal">10 years. </span>
+              I have worked at large 10,000+ employee
               enterprise software companies, as well as scrappy startups.
               I love working on interesting projects and building amazing applications.
             </p>
-            <p className="text-gray-800">
+            <p className="mb-8 text-gray-800 text-lg leading-relaxed">
               I am also the father of two amazing daughters, I live in Portland, OR,
               and when I am not coding, I love woodworking, doing arts and craft
               and having adventures with the kiddos, listening to my records,
               playing board games, and hiking.
             </p>
-          </RightContentSection>
-        </div>
-      </section>
-      <section className="md:flex md:justify-start md:space-x-8 mb-8">
-        <div className="md:w-1/6">
-          <h1 className="mb-4 text-xl text-center text-gray-800 md:text-right md:py-1">Skills</h1>
-        </div>
-        <div className="w-full md:w-5/6">
-          <RightContentSection>
-            <p className="mb-8 text-gray-800">
-              For over 10 years I have worked with many different languages
-              and frameworks and I have cultivated expertise in the following:
+            <p className="mb-8 text-gray-800 text-lg leading-relaxed">
+              I have extensive experience using
+              <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+                Reactjs
+              </a>
+              ,
+              <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+                Ruby on Rails
+              </a>
+              ,
+              <a href="https://emberjs.com/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+                Reactjs
+              </a>
+              ,
+              <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+                Emberjs
+              </a>
+              ,
+              <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+                tailwindcss
+              </a>
+              , and
+              <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+                Webpack
+              </a>
+              .
             </p>
-            <div className="flex flex-row justify-around md:items-baseline">
-              <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" className="mb-4 md:mb-0 group flex items-center flex-col">
-                <img className="transition-all duration-300 h-8 mb-2 opacity-50 group-hover:opacity-100" alt="framework-logo" src={reactLogo}/>
-                <span className="transition-all duration-300 text-gray-600 group-hover:text-gray-800">Reactjs</span>
-              </a>
-              <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer" className="mb-4 md:mb-0 group flex items-center flex-col">
-                <img className="transition-all duration-300 h-8 mb-2 opacity-50 group-hover:opacity-100" alt="framework-logo" src={railsLogo}/>
-                <span className="transition-all duration-300 text-gray-600 group-hover:text-gray-800">Ruby on Rails</span>
-              </a>
-              <a href="https://emberjs.com/" target="_blank" rel="noopener noreferrer" className="mb-4 md:mb-0 group flex items-center flex-col">
-                <img className="transition-all duration-300 h-8 mb-2 opacity-50 group-hover:opacity-100" alt="framework-logo" src={emberLogo}/>
-                <span className="transition-all duration-300 text-gray-600 group-hover:text-gray-800">Emberjs</span>
-              </a>
-              <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="mb-4 md:mb-0 group flex items-center flex-col">
-                <img className="transition-all duration-300 h-8 mb-2 opacity-50 group-hover:opacity-100" alt="framework-logo" src={tailwindLogo}/>
-                <span className="transition-all duration-300 text-gray-600 group-hover:text-gray-800">tailwindcss</span>
-              </a>
-              <a href="https://angular.io/" target="_blank" rel="noopener noreferrer" className="mb-4 md:mb-0 group flex items-center flex-col">
-                <img className="transition-all duration-300 h-8 mb-2 opacity-50 group-hover:opacity-100" alt="framework-logo" src={angularLogo}/>
-                <span className="transition-all duration-300 text-gray-600 group-hover:text-gray-800">Angularjs</span>
-              </a>
-              <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer" className="mb-4 md:mb-0 group flex items-center flex-col">
-                <img className="transition-all duration-300 h-8 mb-2 opacity-50 group-hover:opacity-100" alt="framework-logo" src={webpackLogo}/>
-                <span className="transition-all duration-300 text-gray-600 group-hover:text-gray-800">Webpack</span>
-              </a>
-            </div>
           </RightContentSection>
         </div>
       </section>
-      <section className="md:flex md:justify-start md:space-x-8 mb-8">
-        <div className="md:w-1/6">
-          <h1 className="mb-4 text-xl text-center text-gray-800 md:text-right md:py-1">Experience</h1>
+      <section className="md:flex md:justify-start md:space-x-12 mb-8 font-light">
+        <div className="md:w-1/3">
+          <h2 className="mb-4 text-4xl font-thin text-center text-red-500 md:text-right md:py-1">Experience</h2>
         </div>
-        <div className="w-full md:w-5/6">
+        <div className="w-full md:w-2/3">
           <Accordion>
             <AccordionItem date={'July 2017 - June 2020'} position={'Sr. Software Engineer'} company={'VerticalChange'}>
               <React.Fragment>
@@ -170,47 +160,47 @@ const App = () => {
           </Accordion>
         </div>
       </section>
-      <section className="md:flex md:justify-start md:space-x-8 mb-8">
-        <div className="md:w-1/6">
-          <h1 className="mb-4 text-xl text-center text-gray-800 md:text-right md:py-1">Contact</h1>
+      <section className="md:flex md:justify-start md:space-x-12 mb-8 font-light">
+        <div className="md:w-1/3">
+          <h2 className="mb-4 text-4xl font-thin text-center text-red-500 md:text-right md:py-1">Contact</h2>
         </div>
-        <div className="w-full md:w-5/6">
+        <div className="w-full md:w-2/3">
           <RightContentSection>
             <form name="contact" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
-              <div className="mb-4">
-                <label for="name" class="block text-sm leading-5 font-medium text-gray-700">Name
+              <div className="mb-4 mx-auto md:mx-0 md:w-3/4">
+                <label htmlFor="name" className="block text-sm leading-5 font-medium text-gray-700">Name
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  className="rounded-md shadow-sm form-input block w-1/2 py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-blue-100"
+                  className="rounded-md shadow-sm form-input block w-full py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-red-100"
                   placeholder="John Doe"
                 />
               </div>
-              <div className="mb-4">
-                <label for="email" class="block text-sm leading-5 font-medium text-gray-700">Email
+              <div className="mb-4 mx-auto md:mx-0 md:w-3/4">
+                <label htmlFor="email" className="block text-sm leading-5 font-medium text-gray-700">Email
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  className="rounded-md shadow-sm form-input block w-1/2 py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-blue-100"
+                  className="rounded-md shadow-sm form-input block w-full py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-red-100"
                   placeholder="johndoe@example.com"
                 />
               </div>
-              <div className="mb-4">
-                <label for="message" class="block text-sm leading-5 font-medium text-gray-700">Message
+              <div className="mb-4 mx-auto md:mx-0 md:w-3/4">
+                <label htmlFor="message" className="block text-sm leading-5 font-medium text-gray-700">Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
-                  className="rounded-md shadow-sm form-input block w-1/2 py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-blue-100"
+                  className="rounded-md shadow-sm form-input block w-full py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-red-100"
                   placeholder="Hello"
                 />
               </div>
-              <button type="submit" className="px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-700 active:bg-blue-700 transition duration-150 ease-in-out">Send</button>
+              <button type="submit" className="px-8 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:border-red-500 hover:shadow-md active:bg-red-600 transition duration-300 ease-in-out">Send</button>
             </form>
           </RightContentSection>
         </div>
