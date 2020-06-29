@@ -162,6 +162,19 @@ const App = () => {
       </section>
       <section className="md:flex md:justify-start md:space-x-12 mb-8 font-light">
         <div className="md:w-1/3">
+          <h2 className="mb-4 text-4xl font-thin text-center text-red-500 md:text-right md:py-1">Education</h2>
+        </div>
+        <div className="w-full md:w-2/3">
+          <RightContentSection>
+            <ul className="text-lg">
+              <li className="mb-4"><span className="font-normal">Master of Arts in Teaching</span> University of Portland - 2007</li>
+              <li className="mb-4"><span className="font-normal">BA in English Literature</span> University of Portland - 2005</li>
+            </ul>
+          </RightContentSection>
+        </div>
+      </section>
+      <section className="md:flex md:justify-start md:space-x-12 mb-8 font-light">
+        <div className="md:w-1/3">
           <h2 className="mb-4 text-4xl font-thin text-center text-red-500 md:text-right md:py-1">Contact</h2>
         </div>
         <div className="w-full md:w-2/3">
