@@ -12,7 +12,7 @@ const App = () => {
       <section className="md:flex md:justify-start md:space-x-12 mb-8 font-light">
         <div className="md:w-1/3">
           <h1 className="mb-4 text-5xl font-thin text-center text-red-500 md:text-right md:py-1">Dan Caccavano</h1>
-          <div className="flex items-center justify-around md:justify-end space-x-4 md:w-full w-1/4 md:mx-0 mx-auto mb-8">
+          <div className="flex items-center justify-around md:justify-end md:space-x-4 md:w-full w-1/4 md:mx-0 mx-auto mb-8">
             <a href="https://www.linkedin.com/in/dcaccavano/" target="_blank" rel="noopener noreferrer">
               <img className="transition-all duration-300 h-8 hover:shadow-md hover:opacity-100 opacity-25 rounded-full" src={linkedin} alt="linkedin-logo"/>
             </a>
