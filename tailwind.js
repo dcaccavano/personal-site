@@ -17,6 +17,9 @@ module.exports = {
 
       black: '#000',
       white: '#fff',
+
+      main: '#ff4500',
+      mainBg: '#f6f5f0',
       gray: {
         100: '#f7fafc',
         200: '#edf2f7',
@@ -180,6 +183,7 @@ module.exports = {
       default: '0.25rem',
       md: '0.375rem',
       lg: '0.5rem',
+      xlg: '1.5rem',
       full: '9999px',
     },
     borderWidth: {
@@ -201,6 +205,10 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
       focus: '0 0 0 3px rgba(245, 101, 101,.25)',
+
+      mainOutset: '-5px -5px 20px #FFFFFF, 5px 5px 20px rgba(0,0,0,0.2)',
+      mainFocus:  '-5px -5px 20px #FFFFFF, 5px 5px 20px rgba(0,0,0,0.4)',
+      mainInset: 'inset -5px -5px 10px rgba(255,255,255,0.85), inset 5px 5px 10px rgba(0,0,0,0.1)',
     },
     container: {},
     cursor: {
@@ -250,6 +258,8 @@ module.exports = {
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+      mainSans: ['Open Sans'],
+      mainSerif: ['IBM Plex Serif'],
     },
     fontSize: {
       xs: '0.75rem',

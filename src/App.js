@@ -8,10 +8,10 @@ import github from './images/github.svg';
 
 const App = () => {
   return (
-    <React.Fragment>
-      <section className="md:flex md:justify-start md:space-x-12 mb-8 font-light">
+    <div className="p-8 rounded-xlg shadow-mainInset">
+      <section className="md:flex md:justify-start md:space-x-12 mb-8">
         <div className="md:w-1/3">
-          <h1 className="mb-4 text-5xl font-thin text-center text-red-500 md:text-right md:py-1">Dan Caccavano</h1>
+          <h1 className="mb-4 text-5xl font-light font-mainSerif text-center text-main md:text-right md:py-1">Dan Caccavano</h1>
           <div className="flex items-center justify-around md:justify-end md:space-x-4 md:w-full w-1/4 md:mx-0 mx-auto mb-8">
             <a href="https://www.linkedin.com/in/dcaccavano/" target="_blank" rel="noopener noreferrer">
               <img className="transition-all duration-300 h-8 hover:shadow-md hover:opacity-100 opacity-25 rounded-full" src={linkedin} alt="linkedin-logo"/>
@@ -24,8 +24,8 @@ const App = () => {
         <div className="w-full md:w-2/3">
           <RightContentSection>
             <p className="mb-8 text-gray-800 text-lg leading-relaxed">
-              I am a <span className="font-normal">front end software engineer </span> and I have been
-              developing applications for over <span className="font-normal">10 years. </span>
+              I am a <span className="font-semibold">front end software engineer </span> and I have been
+              developing applications for over <span className="font-semibold">10 years. </span>
               I have worked at large 10,000+ employee
               enterprise software companies, as well as scrappy startups.
               I love working on interesting projects and building amazing applications.
@@ -66,15 +66,15 @@ const App = () => {
           </RightContentSection>
         </div>
       </section>
-      <section className="md:flex md:justify-start md:space-x-12 mb-8 font-light">
+      <section className="md:flex md:justify-start md:space-x-12 mb-8">
         <div className="md:w-1/3">
-          <h2 className="mb-4 text-4xl font-thin text-center text-red-500 md:text-right md:py-1">Experience</h2>
+          <h2 className="mb-4 text-4xl font-light font-mainSerif text-center text-main md:text-right md:py-1">Experience</h2>
         </div>
         <div className="w-full md:w-2/3">
           <Accordion>
             <AccordionItem date={'July 2017 - June 2020'} position={'Sr. Software Engineer'} company={'VerticalChange'}>
               <React.Fragment>
-                <div className="text-gray-600 md:hidden" >July 2017 - June 2020</div>
+                <div className="text-main md:hidden" >July 2017 - June 2020</div>
                 <p className="my-2 italic">
                   At VerticalChange, we built ambitious software solutions for nonprofits
                   and government agencies. Our clients used our off the shelf software as
@@ -103,7 +103,7 @@ const App = () => {
             </AccordionItem>
             <AccordionItem date={'October 2014 - July 2017'} position={'Sr. Software Engineer'} company={'Citrix'}>
               <React.Fragment>
-                <div className="text-gray-600 md:hidden">October 2014 - July 2017</div>
+                <div className="text-main md:hidden">October 2014 - July 2017</div>
                 <p className="my-2 italic">
                   At Citrix, I was brought in as part of an acquisition of RightSignature,
                   an online document signing application. While at Citrix I worked heavily on:
@@ -122,7 +122,7 @@ const App = () => {
             </AccordionItem>
             <AccordionItem date={'April 2013 - October 2014'} position={'Software Engineer'} company={'RightSignature'}>
               <React.Fragment>
-                <div className="text-gray-600 md:hidden">April 2013 - October 2014</div>
+                <div className="text-main md:hidden">April 2013 - October 2014</div>
                 <p className="my-2 italic">
                   At RightSignature we built an ambitious product that allowed people
                   to fill out and sign documents online. We were the underdog in a growing
@@ -145,7 +145,7 @@ const App = () => {
             </AccordionItem>
             <AccordionItem date={'June 2011 - April 2013'} position={'Software Engineer'} company={'ELC Technologies'}>
               <React.Fragment>
-                <div className="text-gray-600 md:hidden">June 2011 - April 2013</div>
+                <div className="text-main md:hidden">June 2011 - April 2013</div>
                 <p className="my-2 italic">
                   ELC was a consultancy where we worked on vastly different projects for
                   different clients. Engagements lasted from a couple of months to
@@ -160,9 +160,9 @@ const App = () => {
           </Accordion>
         </div>
       </section>
-      <section className="md:flex md:justify-start md:space-x-12 mb-8 font-light">
+      <section className="md:flex md:justify-start md:space-x-12 mb-8">
         <div className="md:w-1/3">
-          <h2 className="mb-4 text-4xl font-thin text-center text-red-500 md:text-right md:py-1">Education</h2>
+          <h2 className="mb-4 text-4xl font-light font-mainSerif text-center text-main md:text-right md:py-1">Education</h2>
         </div>
         <div className="w-full md:w-2/3">
           <RightContentSection>
@@ -173,52 +173,46 @@ const App = () => {
           </RightContentSection>
         </div>
       </section>
-      <section className="md:flex md:justify-start md:space-x-12 mb-8 font-light">
+      <section className="md:flex md:justify-start md:space-x-12 mb-8">
         <div className="md:w-1/3">
-          <h2 className="mb-4 text-4xl font-thin text-center text-red-500 md:text-right md:py-1">Contact</h2>
+          <h2 className="mb-4 text-4xl font-light font-mainSerif text-center text-main md:text-right md:py-1">Contact</h2>
         </div>
         <div className="w-full md:w-2/3">
           <RightContentSection>
             <form name="contact" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
               <div className="mb-4 mx-auto md:mx-0 md:w-3/4">
-                <label htmlFor="name" className="block text-sm leading-5 font-medium text-gray-700">Name
-                </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  className="rounded-md shadow-sm form-input block w-full py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-red-100"
-                  placeholder="John Doe"
+                  className="rounded-full shadow-sm form-input placeholder-gray-700 text-gray-800 block w-full py-4 px-6 sm:text-sm sm:leading-5 bg-mainBg shadow-mainInset mt-1 outline-none"
+                  placeholder="Name"
                 />
               </div>
               <div className="mb-4 mx-auto md:mx-0 md:w-3/4">
-                <label htmlFor="email" className="block text-sm leading-5 font-medium text-gray-700">Email
-                </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  className="rounded-md shadow-sm form-input block w-full py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-red-100"
-                  placeholder="johndoe@example.com"
+                  className="rounded-full shadow-sm form-input placeholder-gray-700 text-gray-800 block w-full py-4 px-6 sm:text-sm sm:leading-5 bg-mainBg shadow-mainInset mt-1 outline-none"
+                  placeholder="Email address"
                 />
               </div>
               <div className="mb-4 mx-auto md:mx-0 md:w-3/4">
-                <label htmlFor="message" className="block text-sm leading-5 font-medium text-gray-700">Message
-                </label>
                 <textarea
                   id="message"
                   name="message"
-                  className="rounded-md shadow-sm form-input block w-full py-2 px-4 sm:text-sm sm:leading-5 border border-gray-400 mt-1 outline-none focus:shadow-focus focus:bg-red-100"
-                  placeholder="Hello"
+                  className="rounded-xlg shadow-sm form-input placeholder-gray-700 text-gray-800 block w-full py-4 px-6 sm:text-sm sm:leading-5 bg-mainBg shadow-mainInset mt-1 outline-none"
+                  placeholder="Message"
                 />
               </div>
-              <button type="submit" className="px-8 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:border-red-500 hover:shadow-md active:bg-red-600 transition duration-300 ease-in-out">Send</button>
+              <button type="submit" className="w-full md:w-auto px-8 py-3 border border-transparent text-sm leading-5 font-semibold rounded-full shadow-mainOutset text-white bg-main hover:shadow-mainFocus focus:outline-none transition duration-300 ease-in-out">Send</button>
             </form>
           </RightContentSection>
         </div>
       </section>
-    </React.Fragment>
+    </div>
   );
 }
 

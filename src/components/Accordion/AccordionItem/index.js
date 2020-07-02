@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AccordionItem = ({ position, company, date, children }) => {
-  const [isOpen, setIsOpen] = React.useState(true);
+  const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div>
       <div
@@ -9,15 +9,15 @@ const AccordionItem = ({ position, company, date, children }) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="mr-4">
-          <span className="text-gray-800 mr-2">{position}</span>
-          <span className="text-gray-600">{company}</span>
-          <span className="text-gray-600 hidden md:inline"> : {date}</span>
+          <span className="text-gray-800 mr-2 font-semibold">{position}</span>
+          <span className="text-gray-800">{company}</span>
+          <span className="text-gray-800 hidden md:inline"> : {date}</span>
         </div>
         {
           isOpen
           ?
             <svg
-              className="text-red-500 w-6"
+              className="text-main w-6"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -41,7 +41,7 @@ const AccordionItem = ({ position, company, date, children }) => {
             </svg>
         }
       </div>
-      <div className={`pt-0 pb-4 px-4 border-gray-200 ${isOpen ? "block border-b" : "hidden border-b-0"}`}>
+      <div className={`pt-0 pb-4 px-4 border-gray-300 ${isOpen ? "block border-b" : "hidden border-b-0"}`}>
         {children}
       </div>
     </div>
