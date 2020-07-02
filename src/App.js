@@ -38,27 +38,27 @@ const App = () => {
             </p>
             <p className="mb-8 text-gray-800 text-lg leading-relaxed">
               I have extensive experience using
-              <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+              <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-main hover:underline">
                 Reactjs
               </a>
               ,
-              <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+              <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-main hover:underline">
                 Ruby on Rails
               </a>
               ,
-              <a href="https://emberjs.com/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+              <a href="https://emberjs.com/" target="_blank" rel="noopener noreferrer" className="ml-1 text-main hover:underline">
                 Reactjs
               </a>
               ,
-              <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+              <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-main hover:underline">
                 Emberjs
               </a>
               ,
-              <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+              <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="ml-1 text-main hover:underline">
                 tailwindcss
               </a>
               , and
-              <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-red-500 hover:underline">
+              <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-main hover:underline">
                 Webpack
               </a>
               .
