@@ -47,10 +47,6 @@ const App = () => {
               </a>
               ,
               <a href="https://emberjs.com/" target="_blank" rel="noopener noreferrer" className="ml-1 text-main hover:underline">
-                Reactjs
-              </a>
-              ,
-              <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" className="ml-1 text-main hover:underline">
                 Emberjs
               </a>
               ,
