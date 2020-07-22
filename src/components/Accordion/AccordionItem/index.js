@@ -5,7 +5,7 @@ const AccordionItem = ({ position, company, date, children }) => {
   return (
     <div>
       <div
-        className={`box-border flex items-center justify-between relative cursor-pointer p-4 border-gray-300 ${isOpen ? "border-b-0" : "border-b"}`}
+        className={`box-border flex items-center justify-between relative cursor-pointer py-4 px-0 border-gray-300 ${isOpen ? "border-b-0" : "border-b"}`}
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="mr-4">
