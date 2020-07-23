@@ -32,7 +32,7 @@ const App = () => {
             </p>
             <p className="mb-8 text-gray-800 text-lg leading-relaxed">
               I am also the father of two amazing daughters, I live in Portland, OR,
-              and when I am not coding, I love woodworking, doing arts and craft
+              and when I am not coding, I love woodworking, doing arts and crafts
               and having adventures with the kiddos, listening to my records,
               playing board games, and hiking.
             </p>
@@ -113,7 +113,7 @@ const App = () => {
                     Completely overhauling the UI of RightSignature to better adhere to
                     the rest of the Citrix software ecosystem using Emberjs and Sass
                   </li>
-                </ul>React.Fragment
+                </ul>
               </React.Fragment>
             </AccordionItem>
             <AccordionItem date={'April 2013 - October 2014'} position={'Software Engineer'} company={'RightSignature'}>
